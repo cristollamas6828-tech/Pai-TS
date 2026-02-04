@@ -1,9 +1,19 @@
-const suma = (a:number, b: number): number => {
-    return a + b;
-}
 
-const resultado = suma (10,11)
-console.log(`El resultado es: ${resultado}`);
-/*
+import { Gato } from "./Gato.js";
+import { Mascota } from "./Mascota.js";
 
-*/
+const mascota1 = new Mascota("Lilo",12)
+const mascota2 = new Gato("Tommy", 10,"Azul Ruso")
+
+
+console.log("--------------------Loro--------------------------------")
+console.log(mascota1.saludar())
+console.log(mascota1.cumplirAnios())
+console.log(mascota1.mostrarEdad())
+
+
+console.log("--------------------Gato--------------------------------")
+console.log(mascota2.saludar1())
+console.log(mascota2.mostrarEdad2())
+console.log(mascota2.especies())
+
